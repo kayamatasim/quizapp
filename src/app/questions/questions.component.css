@@ -1,0 +1,21 @@
+
+.rbox{
+   
+    position: fixed;
+    right:10px;
+    width: 20%;
+    height:800px;
+    margin:10px;
+    background-color: black;
+    color: white;
+}
+
+.qbox{
+    float: left;
+   
+    position: absolute;
+    width: 80%;
+    left: 2px;
+    
+}
+

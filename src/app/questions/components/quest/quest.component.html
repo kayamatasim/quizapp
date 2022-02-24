@@ -1,0 +1,56 @@
+<div class="row timer"><span>timer  {{min}}:{{sec}}</span></div>
+ <div class="row">
+
+  
+<!-- starting of the form -->
+
+   <div class="col qbox">
+    <form action="" [formGroup]="qref"  (ngSubmit)="submitquiz(qref)">
+     <div *ngFor="let qu of q" >
+      <div class="question">
+      <h2 class="headq">{{ qu.question}}</h2>
+
+
+      <div class="inputbox">
+        <input type="radio" name="{{qu.question}}" id="{{qu.opt1}}"  formControlName="{{qu.question}}" value="{{qu.opt1}}">
+        <label for="{{qu.opt1}}">{{qu.opt1}}</label>
+       
+      </div>
+
+
+      <div class="inputbox">
+        <input type="radio" name="{{qu.question}}" id="{{qu.opt2}}" formControlName="{{qu.question}}" value="{{qu.opt2}}">
+        <label for="{{qu.opt2}}">{{qu.opt2}}</label>
+        
+       </div>
+
+
+       <div class="inputbox">
+         <input type="radio" name="{{qu.question}}" id="{{qu.opt3}}" formControlName="{{qu.question}}" value="{{qu.opt3}}">
+         <label for="{{qu.opt3}}">{{qu.opt3}}</label>
+         
+       </div>
+
+
+       <div class="inputbox">
+         <input type="radio" name="{{qu.question}}" id="{{qu.opt4}}" formControlName="{{qu.question}}" value="{{qu.opt4}}">
+         <label for="{{qu.opt4}}">{{qu.opt4}}</label>
+        
+       </div>
+      </div>
+     </div>
+
+<div class="b">
+  
+  <button type="submit" class="btn btn-success p-1 m-2 submit" [disabled]="ifdisabled">submit</button>
+</div>
+ 
+  </form>
+   </div>
+
+
+  
+ 
+
+ 
+ 

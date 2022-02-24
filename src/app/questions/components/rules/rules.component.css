@@ -1,0 +1,30 @@
+.rules{
+    background-color: rgb(216, 213, 213);
+    color:rgb(207, 204, 204);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px white;
+}
+
+h2,h1{
+    color:rgb(4, 1, 65);
+    /* text-align:center; */
+    text-shadow: 2px 2px 10px white;
+
+}
+button{
+    padding:5px;
+    background-color: rgb(15, 4, 80);
+    font-weight:bolder;
+}
+
+li{
+  
+    list-style-type:circle;
+    list-style: circle;
+  margin: auto;
+  }
+
+ul{
+   display: flex;
+flex-direction: column;
+}

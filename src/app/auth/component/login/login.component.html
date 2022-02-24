@@ -1,0 +1,15 @@
+<div class="box">
+  <h1 class="header">Login form</h1>
+  <form [formGroup]="userref" (ngSubmit)="checkuser()" class="formbox">
+    <label class="form-label">username</label>
+    <input type="text" formControlName="username" class="form-input" required>
+    <label class="form-label">password</label>
+    <input type="password" formControlName="password"  class="form-input" required>
+    <label class="form-label">email</label>
+    <input type="email" formControlName="email"  class="form-input" required email>
+    <button type="submit" role="spinbutton" [disabled]="!userref.valid">login</button>
+  </form>
+</div>
+
+
+
